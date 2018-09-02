@@ -12,19 +12,34 @@
 	<div>
 		<h1>Orientation event at SVKM Institute of Technology</h1>
 		<h3>Talked and discussed about topics such as Azure Awareness Sessions, Hour of Code, Imagine Cup, Webinars, Github, etc</h3>
-		<div class="imgcont">
+	</div>
+	<div class="imgcont">
 			<div class="imag"><img src="images/1.jpg"></div>
 			<div class="imag"><img src="images/2.jpg"></div>
 			<div class="imag"><img src="images/3.jpg"></div>
 			<div class="imag"><img src="images/4.jpg"></div>
 			<div class="imag"><img src="images/5.jpg"></div>
 			<div class="imag"><img src="images/6.jpg"></div>
-
-		</div>
-
+			<!-- <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;
+			</button>
+			<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;
+			</button> -->
 	</div>
-	<div>
-		<img src="">
-	</div>
+	<script>
+	var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("imag");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+	</script>
 </body>
 </html>
