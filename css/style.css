@@ -1,0 +1,22 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Times New Roman", Times, serif;
+}
+
+.imag
+{
+	display: inline-block;
+	width: 230.4px;
+	height: 172.8px;
+}
+.imag img
+{
+	position: relative;
+	width: 100%;
+	height: 100%
+}
